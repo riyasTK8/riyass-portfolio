@@ -5,8 +5,8 @@ export const portfolioData = {
   skills: {
     programming: ["Javascript", "Typescript"],
     frontend: ["React.js", "Next.js", "Redux Toolkit", "Tailwind CSS", "Shadcn UI", "Framer Motion", "Figma"],
-    backend: ["Node.js", "Express.js", "REST APIs", "MVC Architecture", "JWT"],
-    databases: ["MongoDB", "PostgreSQL", "Prisma ORM", "Redis", "Supabase", "AWS (EC2, S3)", "Nginx", "Cloudflare"],
+    backend: ["Microservices", "API Gateway", "RabbitMQ", "JWT", "Node.js", "Express.js", "REST APIs"],
+    databases: ["PostgreSQL", "MongoDB", "Redis", "Supabase", "AWS (EC2, S3)", "Cloudflare R2", "Prisma ORM", "Nginx"],
     tools: ["Git", "Github", "Postman", "Stripe", "Gemini APIs", "Swagger", "MCP Server"]
   },
   experience: [

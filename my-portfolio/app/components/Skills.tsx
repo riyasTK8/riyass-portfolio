@@ -9,14 +9,41 @@ import SkillsExplainer from "./SkillsExplainer";
 
 const skillCategories = [
   { name: "Frontend", skills: portfolioData.skills.frontend, color: "from-cyan-500 to-blue-500", terminal: ["init react app", "rendering components...", "applying tailwind styles"] },
-  { name: "Backend", skills: portfolioData.skills.backend, color: "from-purple-500 to-pink-500", terminal: ["auth middleware active", "rest api listening", "jwt verified"] },
-  { name: "Databases", skills: portfolioData.skills.databases, color: "from-orange-500 to-red-500", terminal: ["mongodb connected", "querying postgres", "caching in redis"] },
+  { name: "Backend", skills: portfolioData.skills.backend, color: "from-purple-500 to-pink-500", terminal: ["auth middleware active", "jwt token verified", "rabbitmq: message consumed"] },
+  { name: "Cloud & DB", skills: portfolioData.skills.databases, color: "from-orange-500 to-red-500", terminal: ["aws s3 connected", "r2 bucket synced", "cloudflare cache purged"] },
   { name: "Tools", skills: portfolioData.skills.tools, color: "from-green-500 to-emerald-500", terminal: ["git push origin main", "ci/deploying...", "dockerized"] },
+];
+
+const allSkills = [
+  ...portfolioData.skills.frontend,
+  ...portfolioData.skills.backend,
+  ...portfolioData.skills.databases,
+  ...portfolioData.skills.tools,
 ];
 
 export default function Skills() {
   return (
     <section id="skills" className="py-32 px-6 relative overflow-hidden">
+      {/* Infinite Horizontal Marquee */}
+      <div className="absolute top-0 left-0 right-0 py-8 overflow-hidden pointer-events-none opacity-30 select-none">
+        <div className="flex whitespace-nowrap">
+          <motion.div 
+            animate={{ x: [-1920, 0] }}
+            transition={{ 
+              duration: 40,
+              repeat: Infinity,
+              ease: "linear"
+            }}
+            className="flex gap-12 items-center pr-12"
+          >
+            {[...allSkills, ...allSkills, ...allSkills].map((skill, i) => (
+              <span key={i} className="text-4xl md:text-6xl font-black font-space-grotesk tracking-tighter text-white">
+                {skill}
+              </span>
+            ))}
+          </motion.div>
+        </div>
+      </div>
 
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
@@ -34,7 +61,7 @@ export default function Skills() {
             </VisualExplainer>
             
             <div className="space-y-4 mt-8">
-              {["Frontend Architecture", "Backend Orchestration", "Cloud Optimization"].map((item, i) => (
+              {["Microservice Architecture", "JWT Security & RabbitMQ", "AWS & Cloudflare R2"].map((item, i) => (
                 <motion.div 
                   key={item}
                   initial={{ opacity: 0, x: -20 }}
@@ -66,7 +93,7 @@ export default function Skills() {
                 </div>
 
                 <div className="space-y-4 mb-6">
-                  {category.skills.slice(0, 4).map((skill, i) => (
+                  {category.skills.slice(0, 6).map((skill, i) => (
                     <div key={skill} className="space-y-1">
                       <div className="flex justify-between text-[10px] font-bold uppercase text-slate-400">
                         <span>{skill}</span>
