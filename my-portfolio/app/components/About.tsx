@@ -14,7 +14,7 @@ export default function About() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
-        className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center"
+        className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center"
       >
         <div className="relative order-2 lg:order-1 flex flex-col gap-12">
           <VisualExplainer className="w-full">
@@ -25,7 +25,7 @@ export default function About() {
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ once: true }}
-            className="glass p-8 rounded-[2rem] border-cyan-500/20 relative z-10"
+            className="glass p-6 sm:p-8 rounded-[2rem] border-cyan-500/20 relative z-10"
           >
             <div className="flex items-center gap-4 mb-8">
               <div className="w-12 h-12 rounded-2xl bg-cyan-500/10 flex items-center justify-center text-cyan-600">
@@ -74,7 +74,7 @@ export default function About() {
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-6xl font-bold font-space-grotesk mb-8">
+            <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold font-space-grotesk mb-6 md:mb-8">
               Coding with <span className="text-gradient">Purpose.</span>
             </h2>
             <div className="space-y-6 text-slate-400 text-lg leading-relaxed">

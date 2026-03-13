@@ -51,7 +51,7 @@ export default function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
            viewport={{ once: true, amount: 0.2 }}
           >
-            <h2 className="text-4xl md:text-7xl font-bold font-space-grotesk mb-6">
+            <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold font-space-grotesk mb-6">
               Let&apos;s <span className="text-purple-500">Scale.</span>
             </h2>
             <p className="text-slate-400 text-lg leading-relaxed mb-12">
@@ -105,7 +105,7 @@ export default function Contact() {
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true, amount: 0.1 }}
-          className="glass p-10 md:p-16 rounded-[4rem] border-purple-500/10 relative min-h-[600px] flex flex-col justify-center"
+          className="glass p-6 sm:p-10 md:p-16 rounded-3xl md:rounded-[4rem] border-purple-500/10 relative min-h-[500px] md:min-h-[600px] flex flex-col justify-center"
         >
           <div className="absolute top-0 right-0 w-64 h-64 bg-purple-500/10 rounded-full blur-[100px] -mr-32 -mt-32" />
           
@@ -120,7 +120,7 @@ export default function Contact() {
                   onChange={handleInputChange}
                   placeholder="Riyas K I" 
                   required
-                  className="w-full px-8 py-5 rounded-[2rem] bg-white/5 border border-white/10 focus:border-purple-500/50 outline-none transition-all placeholder:text-slate-700 text-white"
+                  className="w-full px-6 sm:px-8 py-4 sm:py-5 rounded-2xl md:rounded-[2rem] bg-white/5 border border-white/10 focus:border-purple-500/50 outline-none transition-all placeholder:text-slate-700 text-white"
                 />
               </div>
               <div className="space-y-2">
@@ -132,7 +132,7 @@ export default function Contact() {
                   onChange={handleInputChange}
                   placeholder="name@company.com" 
                   required
-                  className="w-full px-8 py-5 rounded-[2rem] bg-white/5 border border-white/10 focus:border-purple-500/50 outline-none transition-all placeholder:text-slate-700 text-white"
+                  className="w-full px-6 sm:px-8 py-4 sm:py-5 rounded-2xl md:rounded-[2rem] bg-white/5 border border-white/10 focus:border-purple-500/50 outline-none transition-all placeholder:text-slate-700 text-white"
                 />
               </div>
             </div>
@@ -152,7 +152,7 @@ export default function Contact() {
               type="submit"
               whileHover={{ scale: 1.02, y: -2 }}
               whileTap={{ scale: 0.98 }}
-              className="w-full py-6 rounded-[2rem] bg-sky-500 text-black font-bold flex items-center justify-center gap-3 glow-cyan text-lg"
+              className="w-full py-4 md:py-6 rounded-2xl md:rounded-[2rem] bg-purple-500 text-black font-bold flex items-center justify-center gap-3 glow-purple text-base md:text-lg"
             >
               {isSending ? "System: Transmitting..." : "Establish Connection"}
               <Send size={20} className={isSending ? "animate-ping" : ""} />

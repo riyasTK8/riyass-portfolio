@@ -48,8 +48,8 @@ export default function Skills() {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           
-          <div className="lg:col-span-4 sticky top-32">
-            <h2 className="text-4xl md:text-6xl font-bold font-space-grotesk mb-6">
+          <div className="lg:col-span-4 lg:sticky lg:top-32">
+            <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold font-space-grotesk mb-6">
               Core <span className="text-purple-500">Engine.</span>
             </h2>
             <p className="text-slate-400 mb-12">

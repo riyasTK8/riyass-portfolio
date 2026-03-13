@@ -16,11 +16,11 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 flex justify-center p-6">
+    <nav className="fixed top-0 left-0 right-0 z-50 flex justify-center p-4 sm:p-6">
       <motion.div 
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        className="glass rounded-full px-8 py-3 flex items-center gap-12 max-w-4xl w-full justify-between"
+        className="glass rounded-full px-4 sm:px-8 py-3 flex items-center gap-4 sm:gap-12 max-w-4xl w-full justify-between"
       >
         <span className="text-2xl font-bold font-space-grotesk tracking-tighter text-slate-900">
                 Muhammed <span className="text-purple-500 font-bold transition-all">Riyas.</span>
@@ -67,9 +67,9 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {isOpen && (
         <motion.div 
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="absolute top-24 left-6 right-6 glass p-6 rounded-3xl md:hidden"
+          className="absolute top-20 sm:top-24 left-4 right-4 sm:left-6 sm:right-6 glass p-6 rounded-3xl md:hidden z-[60]"
         >
           <div className="flex flex-col gap-4">
             {navLinks.map((link) => (

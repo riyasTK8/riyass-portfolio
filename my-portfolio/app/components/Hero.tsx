@@ -51,7 +51,7 @@ export default function Hero() {
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.2 }}
-            className="text-5xl md:text-8xl font-bold font-space-grotesk tracking-tight mb-6"
+            className="text-4xl sm:text-6xl md:text-8xl font-bold font-space-grotesk tracking-tight mb-6"
           >
             Muhammed <span className="text-purple-500">Riyas</span>
           </motion.h1>
@@ -60,10 +60,10 @@ export default function Hero() {
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.4 }}
-            className="text-2xl md:text-4xl font-medium text-slate-400 mb-8 h-12"
+            className="text-xl sm:text-2xl md:text-4xl font-medium text-slate-400 mb-8 min-h-[3rem]"
           >
             <span>I build with</span>
-            <span className="mx-3 text-pink-500">_</span>
+            <span className="mx-2 sm:mx-3 text-pink-500">_</span>
             <span className="text-slate-100 font-bold underline decoration-pink-500/30">{displayText}</span>
             <span className="animate-blink text-pink-500">|</span>
           </motion.div>
@@ -72,18 +72,18 @@ export default function Hero() {
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.6 }}
-            className="flex flex-wrap items-center justify-center lg:justify-start gap-4 mb-12"
+            className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-12"
           >
             <a 
               href="#projects"
-              className="px-10 py-4 rounded-full bg-cyan-500 text-black font-bold hover:bg-cyan-400 transition-all hover:scale-105 glow-cyan"
+              className="w-full sm:w-auto px-8 sm:px-10 py-3.5 sm:py-4 rounded-full bg-purple-500 text-black font-bold hover:bg-purple-400 transition-all hover:scale-105 glow-purple text-center"
             >
               View Projects
             </a>
             <a 
               href="/RIYAS.RESUME.pdf" 
               download="RIYAS_RESUME.pdf"
-              className="px-10 py-4 rounded-full glass border border-white/10 font-bold hover:bg-white/5 transition-all hover:scale-105"
+              className="w-full sm:w-auto px-8 sm:px-10 py-3.5 sm:py-4 rounded-full glass border border-white/10 font-bold hover:bg-white/5 transition-all hover:scale-105 text-center"
             >
               Download CV
             </a>

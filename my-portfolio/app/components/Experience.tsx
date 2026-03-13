@@ -12,8 +12,8 @@ export default function Experience() {
   return (
     <section id="experience" className="py-32 px-6 max-w-7xl mx-auto relative overflow-hidden">
 
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-20">
-        <div className="lg:col-span-4 flex flex-col gap-12 sticky top-32 h-fit">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20">
+        <div className="lg:col-span-4 flex flex-col gap-8 md:gap-12 lg:sticky lg:top-32 h-fit">
           <div className="text-left">
             <h2 className="text-4xl md:text-6xl font-bold font-space-grotesk mb-6">
               Growth <span className="text-purple-500">Timeline.</span>
@@ -40,11 +40,11 @@ export default function Experience() {
               transition={{ delay: idx * 0.2 }}
               className="mb-12 ml-8 relative"
             >
-              <div className="absolute -left-[45px] top-0 w-8 h-8 rounded-full bg-[#020617] border-2 border-cyan-500 flex items-center justify-center glow-cyan">
+              <div className="absolute -left-[41px] md:-left-[45px] top-0 w-8 h-8 rounded-full bg-[#020617] border-2 border-cyan-500 flex items-center justify-center glow-cyan">
                 <Briefcase size={14} className="text-cyan-400" />
               </div>
               
-              <div className="glass p-8 rounded-3xl hover:border-cyan-500/30 transition-all duration-500">
+              <div className="glass p-6 md:p-8 rounded-3xl hover:border-cyan-500/30 transition-all duration-500">
                 <span className="text-sm font-bold text-cyan-500 uppercase tracking-widest mb-2 block">{exp.period}</span>
                 <h3 className="text-2xl font-bold font-space-grotesk mb-1 text-white">{exp.role}</h3>
                 <div className="flex flex-wrap items-center gap-x-4 gap-y-1 mb-4">
@@ -79,10 +79,10 @@ export default function Experience() {
               transition={{ delay: 0.4 }}
               className="ml-8 relative"
             >
-               <div className="absolute -left-[45px] top-0 w-8 h-8 rounded-full bg-[#020617] border-2 border-purple-500 flex items-center justify-center glow-purple">
-                <div className="w-2 h-2 rounded-full bg-purple-400" />
+               <div className="absolute -left-[41px] md:-left-[45px] top-0 w-8 h-8 rounded-full bg-[#020617] border-2 border-purple-500 flex items-center justify-center glow-purple">
+                <div className="w-2 h-2 rounded-full bg-sky-400" />
               </div>
-               <div className="glass p-8 rounded-3xl border-purple-500/10 hover:border-purple-500/30 transition-all duration-500">
+               <div className="glass p-6 md:p-8 rounded-3xl border-purple-500/10 hover:border-purple-500/30 transition-all duration-500">
                 <span className="text-sm font-bold text-purple-500 uppercase tracking-widest mb-2 block">{edu.period}</span>
                 <h3 className="text-2xl font-bold font-space-grotesk mb-1 text-white">{edu.degree}</h3>
                 <p className="text-slate-300 font-medium">{edu.institution}</p>
