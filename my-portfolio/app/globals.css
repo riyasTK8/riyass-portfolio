@@ -45,10 +45,11 @@ h6 {
 }
 
 .text-gradient {
-  background: linear-gradient(to right, var(--accent-cyan), var(--accent-purple));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+  -webkit-text-fill-color: currentcolor !important;
+  color: #a855f7 !important;
 }
 
 @keyframes float {

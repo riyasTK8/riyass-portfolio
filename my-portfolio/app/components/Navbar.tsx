@@ -23,7 +23,7 @@ export default function Navbar() {
         className="glass rounded-full px-8 py-3 flex items-center gap-12 max-w-4xl w-full justify-between"
       >
         <span className="text-2xl font-bold font-space-grotesk tracking-tighter text-slate-900">
-                Muhammed <span className="text-cyan-500 group-hover:glow-cyan transition-all">Riyas.</span>
+                Muhammed <span className="text-purple-500 font-bold transition-all">Riyas.</span>
         </span>
 
         {/* Desktop Nav */}

@@ -8,10 +8,10 @@ import VisualExplainer from "./VisualExplainer";
 import SkillsExplainer from "./SkillsExplainer";
 
 const skillCategories = [
-  { name: "Frontend", skills: portfolioData.skills.frontend, color: "from-cyan-500 to-blue-500", terminal: ["init react app", "rendering components...", "applying tailwind styles"] },
-  { name: "Backend", skills: portfolioData.skills.backend, color: "from-purple-500 to-pink-500", terminal: ["auth middleware active", "jwt token verified", "rabbitmq: message consumed"] },
-  { name: "Cloud & DB", skills: portfolioData.skills.databases, color: "from-orange-500 to-red-500", terminal: ["aws s3 connected", "r2 bucket synced", "cloudflare cache purged"] },
-  { name: "Tools", skills: portfolioData.skills.tools, color: "from-green-500 to-emerald-500", terminal: ["git push origin main", "ci/deploying...", "dockerized"] },
+  { name: "Frontend", skills: portfolioData.skills.frontend, color: "bg-cyan-500", terminal: ["init react app", "rendering components...", "applying tailwind styles"] },
+  { name: "Backend", skills: portfolioData.skills.backend, color: "bg-purple-500", terminal: ["auth middleware active", "jwt token verified", "rabbitmq: message consumed"] },
+  { name: "Cloud & DB", skills: portfolioData.skills.databases, color: "bg-orange-500", terminal: ["aws s3 connected", "r2 bucket synced", "cloudflare cache purged"] },
+  { name: "Tools", skills: portfolioData.skills.tools, color: "bg-green-500", terminal: ["git push origin main", "ci/deploying...", "dockerized"] },
 ];
 
 const allSkills = [
@@ -89,7 +89,7 @@ export default function Skills() {
               >
                 <div className="flex justify-between items-center mb-6">
                   <h3 className="text-xl font-bold font-space-grotesk">{category.name}</h3>
-                  <div className={`w-8 h-8 rounded-xl bg-gradient-to-br ${category.color} opacity-20`} />
+                  <div className={`w-8 h-8 rounded-xl ${category.color} opacity-20`} />
                 </div>
 
                 <div className="space-y-4 mb-6">
@@ -105,7 +105,7 @@ export default function Skills() {
                           whileInView={{ width: `${90 - i * 5}%` }}
                           transition={{ duration: 1.5, ease: "easeOut" }}
                          viewport={{ once: true, amount: 0.2 }}
-                          className={`h-full bg-gradient-to-r ${category.color}`}
+                          className={`h-full ${category.color}`}
                         />
                       </div>
                     </div>

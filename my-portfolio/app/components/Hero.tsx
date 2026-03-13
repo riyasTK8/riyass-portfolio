@@ -53,7 +53,7 @@ export default function Hero() {
             transition={{ delay: 0.2 }}
             className="text-5xl md:text-8xl font-bold font-space-grotesk tracking-tight mb-6"
           >
-            Muhammed <span className="text-gradient">Riyas</span>
+            Muhammed <span className="text-purple-500">Riyas</span>
           </motion.h1>
 
           <motion.div

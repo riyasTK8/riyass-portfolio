@@ -31,7 +31,7 @@ export default function ExperienceExplainer() {
             initial={{ width: 0 }}
             animate={{ width: "100%" }}
             transition={{ duration: 4, repeat: Infinity }}
-            className="h-full bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full"
+            className="h-full bg-purple-500 rounded-full"
           />
           
           {/* Milestones */}

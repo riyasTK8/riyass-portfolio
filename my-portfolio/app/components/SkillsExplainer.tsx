@@ -26,7 +26,7 @@ export default function SkillsExplainer() {
             initial={{ width: 0 }}
             animate={{ width: "100%" }}
             transition={{ duration: 1, repeat: Infinity }}
-            className="h-px bg-gradient-to-r from-pink-500/50 to-purple-500/50" 
+            className="h-px bg-purple-500/50" 
           />
           <motion.div
             animate={{ x: ["0%", "100%"] }}
@@ -54,7 +54,7 @@ export default function SkillsExplainer() {
             initial={{ width: 0 }}
             animate={{ width: "100%" }}
             transition={{ duration: 1, repeat: Infinity, delay: 0.5 }}
-            className="h-px bg-gradient-to-r from-purple-500/50 to-orange-500/50" 
+            className="h-px bg-orange-500/50" 
           />
         </div>
 
