@@ -94,7 +94,6 @@ export default function Hero() {
             commands={[
               "npm install success",
               "starting developer portfolio...",
-              "muhammed-riyas --version 2.0.0",
               "status: ready to build"
             ]}
           />
