@@ -52,7 +52,7 @@ export default function Contact() {
            viewport={{ once: true, amount: 0.2 }}
           >
             <h2 className="text-4xl md:text-7xl font-bold font-space-grotesk mb-6">
-              Let&apos;s <span className="text-gradient">Scale.</span>
+              Let&apos;s <span className="text-purple-500">Scale.</span>
             </h2>
             <p className="text-slate-400 text-lg leading-relaxed mb-12">
               Ready to bring your ideas to life? Connect with me for collaborations, inquiries, 
@@ -66,7 +66,7 @@ export default function Contact() {
 
           <div className="flex flex-wrap gap-6">
             <a href={`mailto:${portfolioData.contact.email}`} className="glass p-6 rounded-[2.5rem] flex items-center gap-6 group hover:bg-white/5 transition-all w-fit">
-              <div className="w-14 h-14 rounded-2xl bg-cyan-500/20 flex items-center justify-center text-cyan-400 group-hover:bg-cyan-500 group-hover:text-black transition-all">
+              <div className="w-14 h-14 rounded-2xl bg-purple-500/20 flex items-center justify-center text-purple-400 group-hover:bg-purple-500 group-hover:text-black transition-all">
                 <Mail size={24} />
               </div>
               <div>
@@ -105,9 +105,9 @@ export default function Contact() {
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true, amount: 0.1 }}
-          className="glass p-10 md:p-16 rounded-[4rem] border-cyan-500/10 relative min-h-[600px] flex flex-col justify-center"
+          className="glass p-10 md:p-16 rounded-[4rem] border-purple-500/10 relative min-h-[600px] flex flex-col justify-center"
         >
-          <div className="absolute top-0 right-0 w-64 h-64 bg-cyan-500/10 rounded-full blur-[100px] -mr-32 -mt-32" />
+          <div className="absolute top-0 right-0 w-64 h-64 bg-purple-500/10 rounded-full blur-[100px] -mr-32 -mt-32" />
           
           <form className="space-y-6 relative z-10" onSubmit={handleSubmit}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -120,7 +120,7 @@ export default function Contact() {
                   onChange={handleInputChange}
                   placeholder="Riyas K I" 
                   required
-                  className="w-full px-8 py-5 rounded-[2rem] bg-white/5 border border-white/10 focus:border-cyan-500/50 outline-none transition-all placeholder:text-slate-700 text-white"
+                  className="w-full px-8 py-5 rounded-[2rem] bg-white/5 border border-white/10 focus:border-purple-500/50 outline-none transition-all placeholder:text-slate-700 text-white"
                 />
               </div>
               <div className="space-y-2">
@@ -132,7 +132,7 @@ export default function Contact() {
                   onChange={handleInputChange}
                   placeholder="name@company.com" 
                   required
-                  className="w-full px-8 py-5 rounded-[2rem] bg-white/5 border border-white/10 focus:border-cyan-500/50 outline-none transition-all placeholder:text-slate-700 text-white"
+                  className="w-full px-8 py-5 rounded-[2rem] bg-white/5 border border-white/10 focus:border-purple-500/50 outline-none transition-all placeholder:text-slate-700 text-white"
                 />
               </div>
             </div>
@@ -152,7 +152,7 @@ export default function Contact() {
               type="submit"
               whileHover={{ scale: 1.02, y: -2 }}
               whileTap={{ scale: 0.98 }}
-              className="w-full py-6 rounded-[2rem] bg-cyan-500 text-black font-bold flex items-center justify-center gap-3 glow-cyan text-lg"
+              className="w-full py-6 rounded-[2rem] bg-sky-500 text-black font-bold flex items-center justify-center gap-3 glow-cyan text-lg"
             >
               {isSending ? "System: Transmitting..." : "Establish Connection"}
               <Send size={20} className={isSending ? "animate-ping" : ""} />

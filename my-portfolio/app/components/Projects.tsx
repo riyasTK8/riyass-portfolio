@@ -21,7 +21,7 @@ export default function Projects() {
             viewport={{ once: true }}
             className="text-4xl md:text-6xl font-bold font-space-grotesk mb-6"
           >
-            Proof of <span className="text-gradient">Work.</span>
+            Proof of <span className="text-purple-500">Work.</span>
           </motion.h2>
           <p className="text-slate-400">
             Architecting high-performance digital ecosystems with a focused engineering mindset.

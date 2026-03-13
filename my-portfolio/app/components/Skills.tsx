@@ -50,7 +50,7 @@ export default function Skills() {
           
           <div className="lg:col-span-4 sticky top-32">
             <h2 className="text-4xl md:text-6xl font-bold font-space-grotesk mb-6">
-              Core <span className="text-gradient">Engine.</span>
+              Core <span className="text-purple-500">Engine.</span>
             </h2>
             <p className="text-slate-400 mb-12">
               Powering modern web experiences with a refined and powerful technology stack.

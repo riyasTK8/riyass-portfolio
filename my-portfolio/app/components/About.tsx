@@ -53,11 +53,11 @@ export default function About() {
                   className="flex gap-6 items-start group"
                 >
                   <div className="flex flex-col items-center">
-                     <div className="w-4 h-4 rounded-full border-2 border-pink-500 bg-[#020617] group-hover:bg-pink-500 transition-colors" />
-                     {i !== 3 && <div className="w-0.5 h-12 bg-white/10 group-hover:bg-pink-500/30 transition-colors" />}
+                     <div className="w-4 h-4 rounded-full border-2 border-purple-500 bg-[#020617] group-hover:bg-purple-500 transition-colors" />
+                     {i !== 3 && <div className="w-0.5 h-12 bg-white/10 group-hover:bg-purple-500/30 transition-colors" />}
                   </div>
                   <div className="pb-4">
-                     <span className="text-pink-600 font-bold font-mono text-sm">{step.year}</span>
+                     <span className="text-purple-600 font-bold font-mono text-sm">{step.year}</span>
                     <p className="text-slate-400 font-medium group-hover:text-white transition-colors">{step.text}</p>
                   </div>
                 </motion.div>

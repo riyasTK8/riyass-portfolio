@@ -16,7 +16,7 @@ export default function Experience() {
         <div className="lg:col-span-4 flex flex-col gap-12 sticky top-32 h-fit">
           <div className="text-left">
             <h2 className="text-4xl md:text-6xl font-bold font-space-grotesk mb-6">
-              Growth <span className="text-gradient">Timeline.</span>
+              Growth <span className="text-purple-500">Timeline.</span>
             </h2>
             <p className="text-slate-400">My professional trajectory and educational background.</p>
           </div>
