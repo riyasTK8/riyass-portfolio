@@ -8,13 +8,14 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import CinematicBackground from "./components/CinematicBackground";
 
+
 export default function Home() {
   return (
     <main className="relative min-h-screen">
       <CinematicBackground />
       <Navbar />
       
-      
+
       <div className="relative z-10">
         <Hero />
         <About />
