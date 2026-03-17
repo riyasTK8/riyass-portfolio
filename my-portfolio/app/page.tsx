@@ -14,6 +14,7 @@ export default function Home() {
       <CinematicBackground />
       <Navbar />
       
+      
       <div className="relative z-10">
         <Hero />
         <About />
