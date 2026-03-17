@@ -24,6 +24,7 @@ export default function Home() {
         <Footer />
       </div>
 
+
       {/* Subtle bottom glow */}
       <div className="fixed bottom-0 left-1/2 -translate-x-1/2 w-[60%] h-[20%] bg-cyan-500/5 blur-[120px] -z-10" />
     </main>
